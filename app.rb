@@ -13,6 +13,6 @@ class App < Sinatra::Base
   
   post '/checkout' do
     binding.pry 
-    
+    sessions["item"] = params.values.first
   end
 end
